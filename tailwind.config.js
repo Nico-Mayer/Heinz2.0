@@ -4,7 +4,15 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'heinzGrey': '#171715',
+        'heinzBlue': '#729ACC'
+      },
+      fontFamily:{
+        sans: ['Sora', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }

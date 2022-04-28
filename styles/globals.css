@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #171715;
+    color: white;
+}
+
+.customBackground{
+    background-image: url("../public/bkg_wireframe_transparent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
