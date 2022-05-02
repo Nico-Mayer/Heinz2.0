@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Particle from '../components/Particle'
 import { useMemo } from 'react'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   const pariclesBack = useMemo(() => {
     return <Particle />
   }, [])
@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="fixed z-[-10] h-screen w-full bg-[#2b3539]"></div>
       <div className="hero-grid fixed z-[-10] h-screen w-full opacity-40"></div>
       <div className="gradient fixed h-screen w-full"></div>
+
       <div className="flex w-full flex-1  flex-col">
         <Navbar />
         <Component {...pageProps} />
