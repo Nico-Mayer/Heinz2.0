@@ -1,97 +1,107 @@
 import router from 'next/router'
-import React, { useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 function Navbar() {
-  const mobileMenu = useRef()
+  const mobileBtn = useRef()
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  function changePage(url) {
+    setIsOpen(false)
+    router.push(url)
+  }
+
   function toggleMobileMenu() {
-    console.log(mobileMenu.current)
-    mobileMenu.current.classList.toggle('translate-x-[-100%]')
-    //mobileMenu.current.classList.toggle('hidden')
+    setIsOpen((prev) => !prev)
   }
 
   return (
     <nav className="relative z-30">
       <div className="fixed flex h-24 w-full items-center justify-between bg-heinzGrau py-4 px-2 opacity-95 md:bg-transparent md:px-10">
         <img
-          src="logo.svg"
-          alt="#"
-          className="w-10 cursor-pointer"
-          onClick={() => router.push('/')}
+          src="/logo.png"
+          alt="/logo.svg"
+          className="w-8 cursor-pointer"
+          onClick={() => changePage('/')}
         />
 
-        <div className="text-md hidden flex-row space-x-3 text-white md:flex">
+        <div className="text-md hidden flex-row space-x-8 text-white md:flex">
           <h3
-            className="cursor-pointer transition duration-300 hover:text-heinzBlau"
-            onClick={() => router.push('/sub/allgemein')}
+            className="cursor-pointer  border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
+            onClick={() => changePage('/sub/allgemein')}
           >
             Allgemein
           </h3>
           <h3
-            className="cursor-pointer transition duration-300 hover:text-heinzBlau"
-            onClick={() => router.push('/sub/project')}
+            className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
+            onClick={() => changePage('/sub/project')}
           >
             Project
           </h3>
           <h3
-            className="cursor-pointer transition duration-300 hover:text-heinzBlau"
-            onClick={() => router.push('/sub/howTo')}
+            className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
+            onClick={() => changePage('/sub/howTo')}
           >
             HowTo
           </h3>
           <h3
-            className="cursor-pointer transition duration-300 hover:text-heinzBlau"
-            onClick={() => router.push('/sub/faq')}
+            className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
+            onClick={() => changePage('/sub/faq')}
           >
             FAQ
           </h3>
         </div>
 
-        <div className="flex items-center md:hidden">
-          <button onClick={toggleMobileMenu}>
-            <svg
-              className="h-8 w-8 text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
+        <button
+          ref={mobileBtn}
+          className=" flex h-8 w-8 items-center  md:hidden"
+          onClick={toggleMobileMenu}
+        >
+          <svg
+            className="pointer-events-none h-full w-full text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
       </div>
 
       <div
-        ref={mobileMenu}
-        className="fixed left-[100%] mt-24 flex h-80 w-full duration-500   md:left-[100%] md:hidden"
+        className={
+          'fixed mt-24 flex h-screen w-full transition-all duration-500 md:hidden ' +
+          (isOpen ? '' : 'translate-x-[100%]')
+        }
       >
         <div className="flex h-full w-full flex-col bg-heinzGrau text-lg text-white opacity-95 backdrop-blur">
           <div
-            className="flex w-full flex-1 cursor-pointer items-center justify-center border-t border-gray-600"
-            onClick={() => router.push('/sub/allgemein')}
+            className="flex h-24 w-full  cursor-pointer items-center justify-center border-t border-gray-600"
+            onClick={() => changePage('/sub/allgemein')}
           >
             Allgemein
           </div>
           <div
-            className="flex w-full flex-1 cursor-pointer items-center justify-center border-t border-gray-600"
-            onClick={() => router.push('/sub/project')}
+            className="flex h-24 w-full  cursor-pointer items-center justify-center border-t border-gray-600"
+            onClick={() => changePage('/sub/project')}
           >
             Project
           </div>
           <div
-            className="flex w-full flex-1 cursor-pointer items-center justify-center border-t border-gray-600"
-            onClick={() => router.push('/sub/howTo')}
+            className="flex h-24 w-full  cursor-pointer items-center justify-center border-t border-gray-600"
+            onClick={() => changePage('/sub/howTo')}
           >
             HowTo
           </div>
           <div
-            className="flex w-full flex-1 cursor-pointer items-center justify-center border-t border-gray-600 "
-            onClick={() => router.push('/sub/faq')}
+            className="flex h-24 w-full   cursor-pointer items-center justify-center border-y border-gray-600 "
+            onClick={() => changePage('/sub/faq')}
           >
             FAQ
           </div>

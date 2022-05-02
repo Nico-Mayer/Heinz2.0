@@ -9,12 +9,8 @@
   background-size: unset;
 }
 .gradient {
-  background: linear-gradient(180deg, #2b3539 0.01%, transparent 68%);
+  background: linear-gradient(180deg, #2b3539 0.01%, transparent 20%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.menuAnimation {
-  transform: translateX(-100%);
 }
