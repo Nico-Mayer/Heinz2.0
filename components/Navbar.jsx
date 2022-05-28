@@ -28,27 +28,33 @@ function Navbar() {
         <div className="text-md hidden flex-row space-x-8 text-white md:flex">
           <h3
             className="cursor-pointer  border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
-            onClick={() => changePage('/sub/allgemein')}
+            onClick={() => changePage('/sub/deepfakes')}
           >
-            Allgemein
+            Deepfakes
           </h3>
           <h3
             className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
-            onClick={() => changePage('/sub/project')}
+            onClick={() => changePage('/sub/aboutus')}
           >
-            Project
+            About Us
           </h3>
           <h3
             className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
-            onClick={() => changePage('/sub/howTo')}
+            onClick={() => changePage('/sub/softwareundtutorials')}
           >
-            HowTo
+            Heinz 2.0
           </h3>
           <h3
             className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
-            onClick={() => changePage('/sub/faq')}
+            onClick={() => changePage('/sub/heinzzweinull')}
           >
-            FAQ
+            Software &amp; Tutorials
+          </h3>
+          <h3
+              className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
+              onClick={() => changePage('/sub/impressum')}
+          >
+            Impressum
           </h3>
         </div>
 
