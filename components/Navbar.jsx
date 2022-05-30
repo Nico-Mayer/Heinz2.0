@@ -40,13 +40,13 @@ function Navbar() {
           </h3>
           <h3
             className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
-            onClick={() => changePage('/sub/softwareundtutorials')}
+            onClick={() => changePage('/sub/heinzzweinull')}
           >
             Heinz 2.0
           </h3>
           <h3
             className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
-            onClick={() => changePage('/sub/heinzzweinull')}
+            onClick={() => changePage('/sub/softwareundtutorials')}
           >
             Software &amp; Tutorials
           </h3>
@@ -78,40 +78,6 @@ function Navbar() {
             />
           </svg>
         </button>
-      </div>
-
-      <div
-        className={
-          'fixed mt-24 flex h-screen w-full transition-all duration-500 md:hidden ' +
-          (isOpen ? '' : 'translate-x-[100%]')
-        }
-      >
-        <div className="flex h-full w-full flex-col bg-heinzGrau text-lg text-white opacity-95 backdrop-blur">
-          <div
-            className="flex h-24 w-full  cursor-pointer items-center justify-center border-t border-gray-600"
-            onClick={() => changePage('/sub/allgemein')}
-          >
-            Allgemein
-          </div>
-          <div
-            className="flex h-24 w-full  cursor-pointer items-center justify-center border-t border-gray-600"
-            onClick={() => changePage('/sub/project')}
-          >
-            Project
-          </div>
-          <div
-            className="flex h-24 w-full  cursor-pointer items-center justify-center border-t border-gray-600"
-            onClick={() => changePage('/sub/howTo')}
-          >
-            HowTo
-          </div>
-          <div
-            className="flex h-24 w-full   cursor-pointer items-center justify-center border-y border-gray-600 "
-            onClick={() => changePage('/sub/faq')}
-          >
-            FAQ
-          </div>
-        </div>
       </div>
     </nav>
   )

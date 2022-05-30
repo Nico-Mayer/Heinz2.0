@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  font-family: Sora;
+}
 
 .hero-grid {
   background-blend-mode: screen;
@@ -9,7 +15,7 @@
   background-size: unset;
 }
 .gradient {
-  background: linear-gradient(180deg, #2b3539 0.01%, transparent 20%);
+  background: linear-gradient(180deg, #171715 0.01%, transparent 20%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

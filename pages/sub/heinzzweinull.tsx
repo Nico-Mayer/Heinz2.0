@@ -1,29 +1,48 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import MainHeader from "../../components/MainHeader";
+import StyledText from "../../components/StyledText";
+import SubHeader from "../../components/SubHeader";
 
 function hienzzweinull() {
     return (
         <div className="z-10 flex min-h-screen flex-1 flex-col items-center justify-center pt-24">
         <main className="m-auto flex h-full w-full max-w-7xl flex-col items-center justify-center px-20 text-center">
-        <motion.div
-            initial="hidden"
-    animate="visible"
-    variants={{
-        hidden: {
-            scale: 0.8,
-                opacity: 0,
-        },
-        visible: {
-            scale: 1,
-                opacity: 1,
-                transition: {
-                delay: 0.4,
-            },
-        },
-    }}
->
-    <h1 className="text-7xl font-bold text-white">Software &amp; Tutorials</h1>
-        </motion.div>
+            <div className={"z-10 flex flex-1 flex-col mb-3 justify-items-start justify-start"}>
+                <MainHeader title={"Heinz 2.0"}/>
+            </div>
+            <div className={"z-10 flex min-h-screen flex-1 flex-col items-center justify-center bg-heinzGrau ring-2 ring-heinzBlau/[.40] shadow-2xl"}>
+                <SubHeader title={"PROJEKTHERKUNFT/ -IDEE"}/>
+                <StyledText
+                    text={"Warum eigentlich ein Projekt zum Thema Deepfakes und woher kam der Anreiz? \n" +
+                    "Ein sehr großer Fokus unseres Studienganges Media Engineering ist es, ein 1-jähriges Projekt " +
+                    "auf die Beine zu stellen. Die Themen werden dabei entweder von den Professoren vorgegeben oder " +
+                    "wir als Studierende dürfen unserer Kreativität freien Lauf lassen und uns ein eigenes Thema überlegen. " +
+                    "Neben Projekten wie VR oder AR Spielen, Browseranwendungen oder Handyapps zum Thema Nachhaltigkeit befasst " +
+                    "sich eine Projektgruppe, nämlich wir als Gruppe Heinz 2.0, mit Deepfakes."}/>
+                <div className={"flex flex-row flex-nowrap justify-center content-evenly"}>
+                    <img className={"max-h-64"} src={"/bmeLogo.png"}/>
+                    <img className={"max-h-64"} src={"/logo.svg"}/>
+                </div>
+                <StyledText
+                    text={"Ziel unseres Projektes ist es ein möglichst realistisches Deepfake unseres ehemaligen Professors " +
+                    "Heinz Brünig zu erstellen. Da dieser nun im Jahre 2022 in Rente geht und das Lehren im Hochschullalltag " +
+                    "beiseitelegt, erstellen wir mit unserem Projekt Heinz 2.0 eine Möglichkeit Professor Brünig weiterhin im " +
+                    "Hochschulleben erhalten zu können. \nGrundlage unserer Arbeit sind hierbei Videos, einmal von Professor Brünig " +
+                    "und einmal von einer beliebigen Person, dessen Mimik für das Deepfake verwendet wird. Hierbei wird die Mimik " +
+                    "der Person A verwendet, um eine Fälschung von Professor Brünig darstellen zu können. Ein sogenannter Gesichter " +
+                    "Tausch findet statt und die Person kann somit in die Rolle von Heinz Brünig schlüpfen."}/>
+                <StyledText
+                    text={"Aber wer genau ist denn nun Heinz Brünig?"}/>
+                <SubHeader title={"HEINZ BRÜNIG"}></SubHeader>
+                <StyledText
+                    text={"Prof. Dr. Heinz Brünig ist Professor für Angewandte Informatik, Interaktive Systeme, \n" +
+                    "Multimedia, Mustererkennung und Bildverarbeitung an der Technischen Hochschule Georg Simon Ohm in Nürnberg. " +
+                    "Wir als Studierende in Media Engineering von der Fakultät EFI (Elektrotechnik, Feinwerktechnik, Informationstechnik) " +
+                    "durften ihn bereits in den Vorlesungen Multimedia und Interaktion erleben. Da Prof. Brünig eine bekannte Person des " +
+                    "Hochschullebens ist, ist der Effekt ihn als Star eines Deepfakes zu sehen, größer als der einer berühmten Persönlichkeit."}/>
+                <img className={"mb-8"} src={"/heinzPortrait.jpg"}/>
+            </div>
         </main>
         </div>
 )

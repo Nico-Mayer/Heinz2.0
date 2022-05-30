@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         heinzBlau: '#729ACC',
-        heinzGrau: '#2b3539',
+        heinzGrau: '#171715',
       },
     },
   },

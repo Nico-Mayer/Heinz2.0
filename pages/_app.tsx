@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <div className="overflow-x-hidden">
       {pariclesBack}
-      <div className="fixed z-[-10] h-screen w-full bg-[#2b3539]"></div>
+      <div className="fixed z-[-10] h-screen w-full bg-[#171715]"></div>
       <div className="hero-grid fixed z-[-10] h-screen w-full opacity-40"></div>
       <div className="gradient fixed h-screen w-full"></div>
 
