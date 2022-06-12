@@ -2,7 +2,7 @@ import React from "react";
 
 function StyledText(text){
     return(
-        <div>{text.text}</div>
+        <>{text.text}</>
     )
 }
 
