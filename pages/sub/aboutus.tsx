@@ -14,15 +14,15 @@ function aboutus() {
             <div className={"z-10 flex min-h-screen flex-1 flex-col items-center justify-center bg-heinzGrau ring-2 ring-heinzBlau/[.40] shadow-2xl"}>
                 <SubHeader title={"Projektherkunft/ -idee"}/>
                 <StyledText
-                    text={"Unser Team besteht aus insgesamt 5 Personen: Jonas Krug, Nico Mayer, Selin Schmitt, Sophie Harms und Tobias Hartmann. " +
-                    "Wir sind alle Studierende an der TH-Nürnberg im Bachelorstudiengang Media Engineering und befinden uns momentan im 6. Semester. " +
-                    "Seit unserem 5. Semester, genauer gesagt seit Oktober 2021, beschäftigen wir uns mit diesem Projekt. Dazu gehört nicht nur die " +
-                    "Erstellung eines Deepfakes, sondern auch Recherchen zu verschiedenen Softwaren, die zur Erstellung von Deepfakes benötigt werden, " +
-                    "Überlegung eines Projektnamens, sowie Logos, Videoaufnahmen und Tests zum Thema „Hardware & Iterationen: wie beeinflusst die Hardware " +
-                    "die Qualität eines Deepfakes?“.Hier könnt ihr die ersten Videoaufnahmen sehen, die wir als Basis für die Erstellung unserer ersten " +
-                    "Deepfakes verwendet haben:"}/>
+                    text={<p>Unser Team besteht aus insgesamt 5 Personen: Jonas Krug, Nico Mayer, Selin Schmitt, Sophie Harms und Tobias Hartmann.
+                    Wir sind alle Studierende an der TH-Nürnberg im Bachelorstudiengang Media Engineering und befinden uns momentan im 6. Semester.
+                    Seit unserem 5. Semester, genauer gesagt seit Oktober 2021, beschäftigen wir uns mit diesem Projekt. Dazu gehört nicht nur die
+                    Erstellung eines Deepfakes, sondern auch Recherchen zu verschiedenen Softwaren, die zur Erstellung von Deepfakes benötigt werden,
+                    Überlegung eines Projektnamens, sowie Logos, Videoaufnahmen und Tests zum Thema „Hardware & Iterationen: wie beeinflusst die Hardware
+                    die Qualität eines Deepfakes?“.Hier könnt ihr die ersten Videoaufnahmen sehen, die wir als Basis für die Erstellung unserer ersten
+                        "Deepfakes verwendet haben:</p>}/>
                     <img className={"w-3/4 m-5"} src={"/testvideos.png"}/>
-                <StyledText text={"Übersicht unserer Arbeit in der ersten Hälfte des Projektes: \n"}/>
+                <StyledText text={<p>Übersicht unserer Arbeit in der ersten Hälfte des Projektes: <br/></p>}/>
                 <img className={"w-3/4"} src={"/roadmap.png"}/>
             </div>
         </main>

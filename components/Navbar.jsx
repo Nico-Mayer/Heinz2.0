@@ -52,6 +52,12 @@ function Navbar() {
           </h3>
           <h3
               className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
+              onClick={() => changePage('/sub/faq')}
+          >
+            FAQ
+          </h3>
+          <h3
+              className="cursor-pointer border-l-2 pl-2 transition duration-300 hover:text-heinzBlau"
               onClick={() => changePage('/sub/impressum')}
           >
             Impressum

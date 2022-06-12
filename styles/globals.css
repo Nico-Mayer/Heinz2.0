@@ -8,6 +8,13 @@ body{
   font-family: Sora;
 }
 
+p{
+  color: white;
+  white-space: pre-wrap;
+  text-align: left;
+  margin: 1.25rem;
+}
+
 .hero-grid {
   background-blend-mode: screen;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.15)'%3E%3Cpath d='M0 .5h31.5V32'/%3E%3C/svg%3E");
