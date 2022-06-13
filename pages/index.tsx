@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="m-auto flex h-full w-full max-w-7xl flex-col items-center justify-center px-20 text-center text-white">
+      <main className="mx-auto flex h-full w-full max-w-7xl flex-col  text-center text-white">
         <div className="">
           <motion.div
             initial="hidden"

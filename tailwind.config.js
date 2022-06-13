@@ -5,9 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+      },
       colors: {
         heinzBlau: '#729ACC',
         heinzGrau: '#171715',
+        bgMain: '#2b3539',
       },
     },
   },

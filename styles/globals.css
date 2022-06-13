@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   font-family: Sora;
 }
 
-p{
+p {
   color: white;
   white-space: pre-wrap;
   text-align: left;
@@ -22,7 +22,7 @@ p{
   background-size: unset;
 }
 .gradient {
-  background: linear-gradient(180deg, #171715 0.01%, transparent 20%);
+  background: linear-gradient(180deg, #2b3539 0.01%, transparent 20%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
