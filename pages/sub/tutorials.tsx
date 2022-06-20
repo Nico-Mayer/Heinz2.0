@@ -28,16 +28,33 @@ function tutorials() {
             className={'mt-5 mb-5 pl-40 pr-40'}
             src={'/videoaufnahmen.png'}
           />
+          <StyledText text={<h5 className={'text-heinzBlau'}>
+            Winkel
+          </h5>}/>
+          <video className={"mb-5"} width="750" height="500" controls >
+            <source src="/videos/Winkel.mp4" type="video/mp4"/>
+          </video>
+          <StyledText text={<h5 className={'text-heinzBlau'}>
+            Mimik
+          </h5>}/>
+          <video className={"mb-5"} width="750" height="500" controls >
+            <source src="/videos/Mimik.mp4" type="video/mp4"/>
+          </video>
           <SubHeader title={'Welche Hardware steht zur Verfügung?'} />
           <img className={'pl-20 pr-20'} src={'/welchestutorial.png'} />
+          <StyledText text={<p>Hier geht es zum GoogleColab-Tutorial: <a className={"source"} href={"#colabTutorial"}>LINK</a></p>}/>
           <SubHeader title={'DeepFaceLab lokal installiert'} />
+          <StyledText text={<p>Wer lieber ein Tutorial anguckt, als es zu lesen:</p>}/>
+          <video className={"mb-5"} width="750" height="500" controls >
+            <source src="/videos/dflTutorial.mp4" type="video/mp4"/>
+          </video>
           <StyledText
             text={
               <>
                 <h5 className={'text-heinzBlau'}>DeepFaceLab installieren</h5>
                 <p>
-                  Bei der Ausführung der nachfolgenden Schritte, wird auch
-                  deutlich wie DeepFaceLab funktioniert. Zunächst sollte man die
+                  Dieses Tutorial soll nahebringen, wie man relativ schnell und einfach zum ersten eigenen Deepfake-Video kommt. <br/>
+                    Zunächst sollte man die
                   richtige DFL-Version installieren. Dazu muss man wissen, ob
                   und welche Grafikkarte vorhanden ist. Je nachdem, wie alt und
                   von welchem Hersteller diese ist, wählt man die passende
@@ -121,8 +138,7 @@ function tutorials() {
                   Dieser Vorgang dauert bei Verwendung einer NVIDIA GeForce GTX
                   1050 und 3300 Frames ungefähr sechs Minuten. Interessant ist,
                   dass nach Abschluss einem gezeigt wird, auf wie vielen Bildern
-                  überhaupt ein Gesicht erkannt wurde (siehe „Welche Gesichter
-                  wurden nicht erkannt“). Das gleiche passiert nun auch wieder
+                  überhaupt ein Gesicht erkannt wurde. Das gleiche passiert nun auch wieder
                   mit den Gesichtern aus dem Zielvideo. Dazu startet man
                   data_dst faceset extract und gibt wieder dieselben Werte ein.
                   Die extrahierten Gesichter werden, wie alles andere, in den
@@ -164,8 +180,7 @@ function tutorials() {
                 <h5 className={'text-heinzBlau'}>Das Vorschaufenster</h5>
                 <p>
                   Das Vorschaufenster zeigt an, wie viele Iterationen der
-                  Algorithmus schon durchlaufen ist. Im Beispiel auf Abbildung
-                  21 zusehen sind es 46744 Itertionen. Die Spalten zeigen
+                  Algorithmus schon durchlaufen ist. Im Beispiel oben sind es 46744 Iterationen. Die Spalten zeigen
                   folgende Bilder:
                   <br />
                   <br />
@@ -224,7 +239,7 @@ function tutorials() {
               <>
                 <h5 className={'text-heinzBlau'}>Interaktiver Merger</h5>
                 <p>
-                  Der interaktive Merger bietet ziemlcih viele fortgeschrittene
+                  Der interaktive Merger bietet ziemlich viele fortgeschrittene
                   Einstellungsmöglichkeiten, die es einem ermöglichen, das beste
                   aus dem Trainingsmodell heruaszuholen.
                 </p>
@@ -232,6 +247,7 @@ function tutorials() {
             }
           />
           <SubHeader title={'DeepFaceLab mit Google Colab'} />
+          <a id={"colabTutorial"}/>
           <StyledText
             text={
               <p>
@@ -247,8 +263,9 @@ function tutorials() {
                 wird dann auf einem Google Drive Konto hochgeladen und auf Colab
                 trainiert.
                 <br />
-                Maschinelles Lernen ist in Colab auf eine Dauer von bis zu 12
-                Stunden begrenzt. Ist diese Zeit abgelaufen, so wird die
+                <br />
+                <span className={"text-heinzBlau"}>Maschinelles Lernen ist in Colab auf eine Dauer von bis zu 12
+                  Stunden begrenzt.</span> Ist diese Zeit abgelaufen, so wird die
                 Verbindung zum Server automatisch getrennt und es kommt
                 möglicherweise zum Datenverlust. Deshalb sollte dieses Zeitlimit
                 nicht überschritten werden.
@@ -264,21 +281,22 @@ function tutorials() {
                 Konto wird erfahrungsgemäß die Verbindung nach drei Stunden
                 unterbrochen.
                 <br />
-                Deswegen ist dieser Dienst für hochwertige Deepfakes nur
-                eingeschränkt geeignet. Beim Trainieren des Source und
-                Destination Videos müssen die Projektteilnehmer den
-                Trainingsprozess aktiv überwachen, um die Verbindung nach 3 oder
-                4 Stunden manuell neu aufzubauen. Zwar gehen hier keine Daten
+                <br />
+                <span className={"text-heinzBlau"}>Deswegen ist dieser Dienst für hochwertige Deepfakes nur
+                  eingeschränkt geeignet.</span> Beim Trainieren des Source und Destination Videos muss der
+                Trainingsprozess aktiv überwacht werden, da die Verbindung nach 3 oder
+                4 Stunden manuell neu aufgebaut werden muss. Zwar gehen hier keine Daten
                 verloren und das Training wird ganz einfach weiter fortgesetzt,
                 allerdings ist das ständige Überwachen sowohl umständlich als
                 auch zeitaufwendig. Bei Iterationen über 100.000 ist ein
                 reibungsloser Verbindungsaufbau nicht gewährleistet. Wir
                 empfehlen hier ein Upgrade auf ein Google Plus Konto. Diese
-                Empfehlungen entstammen persönlichen Erfahrungen in der ersten
+                Empfehlungen entstammen persönlichen Erfahrungen in der frühen
                 Projektphase.
               </p>
             }
           />
+          <SubHeader title={'Quellen'}/>
         </div>
       </main>
     </div>

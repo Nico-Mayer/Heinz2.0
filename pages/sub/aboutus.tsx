@@ -1,7 +1,5 @@
-import { motion } from 'framer-motion'
 import React from 'react'
 import MainHeader from '../../components/MainHeader'
-import SubHeader from '../../components/SubHeader'
 import StyledText from '../../components/StyledText'
 
 function aboutus() {
@@ -15,7 +13,6 @@ function aboutus() {
             'z-10 flex  flex-1 flex-col items-center  bg-bgMain/40 px-8 py-10 shadow-3xl  backdrop-blur-md'
           }
         >
-          <SubHeader title={'Projektherkunft/ -idee'} />
           <StyledText
             text={
               <p>
@@ -31,11 +28,13 @@ function aboutus() {
                 Videoaufnahmen und Tests zum Thema „Hardware & Iterationen: wie
                 beeinflusst die Hardware die Qualität eines Deepfakes?“.Hier
                 könnt ihr die ersten Videoaufnahmen sehen, die wir als Basis für
-                die Erstellung unserer ersten "Deepfakes verwendet haben:
+                die Erstellung unserer ersten Deepfakes verwendet haben:
               </p>
             }
           />
-          <img className={'m-5 w-3/4'} src={'/testvideos.png'} />
+          <video className={"mb-5"} width="750" height="500" controls >
+            <source src="/videos/team.mp4" type="video/mp4"/>
+          </video>
           <StyledText
             text={
               <p>

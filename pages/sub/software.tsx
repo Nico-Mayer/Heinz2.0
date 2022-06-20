@@ -1,7 +1,6 @@
 import React from 'react'
 import MainHeader from '../../components/MainHeader'
 import SubHeader from '../../components/SubHeader'
-import StyledText from '../../components/StyledText'
 import SoftwareArticle from '../../components/SoftwareArticle'
 
 function software() {
@@ -113,6 +112,7 @@ function software() {
             link={'https://github.com/MachineEditor/MachineVideoEditor'}
           />
         </div>
+        <SubHeader title={'Quellen'}/>
       </main>
     </div>
   )

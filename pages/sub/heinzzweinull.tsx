@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import React from 'react'
 import MainHeader from '../../components/MainHeader'
 import StyledText from '../../components/StyledText'
@@ -15,7 +14,7 @@ function hienzzweinull() {
             'z-10 flex min-h-screen flex-1 flex-col items-center bg-bgMain/40 py-10 px-8 shadow-3xl   backdrop-blur-md'
           }
         >
-          <SubHeader title={'PROJEKTHERKUNFT/ -IDEE'} />
+          <SubHeader title={'Projektherkunft/ -idee'} />
           <StyledText
             text={
               <p>
@@ -64,7 +63,7 @@ function hienzzweinull() {
               </p>
             }
           />
-          <SubHeader title={'HEINZ BRÜNIG'}></SubHeader>
+          <SubHeader title={'Heinz Brünig'}></SubHeader>
           <StyledText
             text={
               <p>
