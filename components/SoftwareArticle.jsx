@@ -8,7 +8,7 @@ function SoftwareArticle(articleInfo) {
             <StyledText text={articleInfo.text}/>
             <StyledText text={articleInfo.linkDescription}/>
             <a href={articleInfo.link}><p
-                className={"border-solid border-2 border-heinzBlau p-3 bg-heinzBlau text-heinzGrau hover:bg-white"}>{articleInfo.title}</p>
+                className={"border-solid border-2 border-white p-3 bg-heinzOrange text-heinzGrau hover:bg-white"}>{articleInfo.title}</p>
             </a>
         </>
     )

@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         heinzBlau: '#729ACC',
         heinzGrau: '#171715',
+        heinzOrange: '#CCA472',
         bgMain: '#2b3539',
       },
     },
