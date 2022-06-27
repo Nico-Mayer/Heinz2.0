@@ -46,7 +46,15 @@ function faq() {
                         Google Colab ist bis zu einer Trainingszeit von 12 Stunden
                         kostenlos nutzbar.
                     </p>} faq={"5. Muss ich für DeepFaceLab oder Google Colab bezahlen?"}/>
-
+                    <Question text={<p>
+                        Eine Grafikarte auch GPU (Graphics Processing Unit) sind auf bestimte mathematische Verfahren, wie Vektor- und Matrizen-Berechnungen, spezialisierter Prozessor. Solche Rechnungen werden vor allem benötigt, wenn es um Grafik beispielsweis in Spielen geht. <a className={'source'}
+                                                                                                                                                                                                                                                                                          id={"srcRef13"}
+                                                                                                                                                                                                                                                                                          href={"#linkSrc13"}>[13]</a>
+                    </p>} faq={"6. Was ist eine GPU / Grafikkarte?"}/>
+                    <SubHeader title={'Quellen'}/>
+                    <a className={"source"} id={"linkSrc14"} target="_blank"
+                       href={"https://books.google.de/books?id=6aepodiiEK0C&lpg=PA1&ots=OI0f2kwksV&dq=was%20ist%20eine%20grafikkarte&lr&hl=de&pg=PA7#v=onepage&q&f=false"}>[13]
+                        Nischwitz, Alfred, et al.Computergrafik und Bildverarbeitung: Alles für Studium und Praxis - Bildverarbeitungswerkzeuge, Beispiel-Software und interaktive Vorlesungen, Deutschland,Vieweg+Teubner Verlag, 2007. [Online]. Zugriff am: 27. Juni 2022.</a>
                 </div>
             </main>
         </div>

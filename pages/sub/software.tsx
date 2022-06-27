@@ -26,6 +26,8 @@ function software() {
                                 austauschen oder ausschließlich die Lippen manipulieren. <a className={'source'}
                                                                                             id={"srcRef7"}
                                                                                             href={"#linkSrc7"}>[7]</a>
+                                <br/>
+                                Unter dem Unterpunkt "Releases" werden mehrere Möglichkeiten zum Download angeboten.
                             </p>
                         }
                         linkDescription={<p>Hier ist der Link zum Github-Repository:</p>}
