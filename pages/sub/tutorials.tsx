@@ -94,7 +94,8 @@ function tutorials() {
                                                                                    href={"#colabTutorial"}>LINK</a>
                     </p>}/>
                     <SubHeader title={'DeepFaceLab lokal installiert'}/>
-                    <StyledText text={<p>Wer lieber ein Tutorial anguckt, als es zu lesen:</p>}/>
+                    <StyledText text={<p>Dieses Tutorial soll nahebringen, wie man relativ schnell und einfach zum ersten
+                        eigenen Deepfake-Video kommt. <br/>Wer aber lieber ein Tutorial anguckt, als es zu lesen, kann sich auch dieses Video angucken:</p>}/>
                     <video className={"mb-5"} width="750" height="500" controls>
                         <source src="/videos/dflTutorial.mp4" type="video/mp4"/>
                     </video>
@@ -103,14 +104,32 @@ function tutorials() {
                             <>
                                 <h5 className={'text-heinzBlau'}>DeepFaceLab installieren</h5>
                                 <p>
-                                    Dieses Tutorial soll nahebringen, wie man relativ schnell und einfach zum ersten
-                                    eigenen Deepfake-Video kommt. <br/>
-                                    Zunächst sollte man die
-                                    richtige DFL-Version installieren. Dazu muss man wissen, ob
+                                    Zunächst sollte man die richtige DFL-Version installieren. Dazu muss man wissen, ob
                                     und welche Grafikkarte vorhanden ist. Je nachdem, wie alt und
                                     von welchem Hersteller diese ist, wählt man die passende
                                     Version aus. Die Versionen sind so benannt, dass man die
-                                    korrekte allein am Namen erkennen kann. Nach der Installation
+                                    korrekte allein am Namen erkennen kann. Wenn man DeepFaceLab über Mega.nz herunterlädt, sieht die Auswahl folgendermaßen aus:
+                                </p>
+                            </>
+                        }
+                    />
+                    <img src={'/meganz.png'}/>
+                    <StyledText
+                        text={
+                            <>
+                                <p>
+                                    Wie man sieht, gibt es zwei Versionen zugeschnitten auf DirectX12 (eine ältere aus dem Jahr 2021 ud eine aktuelle aus Mai 2022).<br/>
+                                    Darüber hinaus gibt es für NVIDIA-Grafikkarten eine Version für die Grafikkarten der 3000er Serie und eine für alle vorherigen Karten, die beide aus dem November 2021 sind. (Tag der Erstellung der Screenshots: 27.06.2022) Die Versionen können natürlich jederzeit aktualisiert werden.
+                                </p>
+                            </>
+                        }
+                    />
+                    <img src={'/meganzM.png'}/>
+                    <StyledText
+                        text={
+                            <>
+                                <p>
+                                    Nach der Installation
                                     findet man einen Ordner vor, der viele Batchdateien und zwei
                                     Ordner enthält. Der _internal-Ordner ist nicht relevant. Man
                                     kann diesen ignorieren. Wichtig ist der workspace-Ordner – der
@@ -119,7 +138,7 @@ function tutorials() {
                             </>
                         }
                     />
-                    <img src={''}/>
+                    <img src={'/installationsOrdner.png'}/>
                     <StyledText
                         text={
                             <>
@@ -161,7 +180,7 @@ function tutorials() {
                                     Dateiformat, in dem die Bilder gespeichert werden sollen,
                                     gefragt. Im Zweifel bietet Deepfacelab ein Defaultwert an, der
                                     in den eckigen Klammern steht, und meistens eine gute Wahl
-                                    ist. Wenn man weiß, dass das Video mit 60 Fps aufgenommen
+                                    ist. Wenn man beispielsweise weiß, dass das Video mit 60 Fps aufgenommen
                                     wurde, aber das Dateiformat zunächst egal ist, gibt man “60”
                                     ein und drückt einfach Enter bei der Frage nach dem
                                     Dateiformat. Der Vorgang dauert nun einen längeren Augenblick.
@@ -189,9 +208,11 @@ function tutorials() {
                                     Dieser Vorgang dauert bei Verwendung einer NVIDIA GeForce GTX
                                     1050 und 3300 Frames ungefähr sechs Minuten. Interessant ist,
                                     dass nach Abschluss einem gezeigt wird, auf wie vielen Bildern
-                                    überhaupt ein Gesicht erkannt wurde. Das gleiche passiert nun auch wieder
-                                    mit den Gesichtern aus dem Zielvideo. Dazu startet man
-                                    data_dst faceset extract und gibt wieder dieselben Werte ein.
+                                    überhaupt ein Gesicht erkannt wurde.
+                                    <br/>
+                                    Das gleiche passiert nun auch wieder
+                                    mit den Gesichtern aus dem Zielvideo. Dazu startet man <span className={'text-heinzBlau'}>"
+                                    <span className={'text-yellow-300'}>data-dst</span> faceset extract"</span> und gibt wieder dieselben Werte ein.
                                     Die extrahierten Gesichter werden, wie alles andere, in den
                                     entsprechenden Unterordnern des Arbeitsplatzes gespeichert.
                                     Damit sind alle vorbereitenden Schritte abgeschlossen.
