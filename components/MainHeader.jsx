@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 function MainHeader(params) {
   return (
     <div className="relative mb-4 overflow-hidden rounded-full">
-      <img src="/haken.png" className="h-full w-full object-cover" />
+      <img src="/haken_v2.png" className="h-full w-full object-cover" />
       <motion.div
         initial="hidden"
         animate="visible"

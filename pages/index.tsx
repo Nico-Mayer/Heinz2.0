@@ -39,19 +39,24 @@ const Home: NextPage = () => {
 
                         <Tile title={"Deepfakes"}
                               imgSrc={"/realesBsp.png"}
-                              text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}/>
+                              text={"Alles was man über Deepfakes wissen sollte!"}
+                              url={"/sub/deepfakes"}/>
                         <Tile title={"About Us"}
                               imgSrc={"/abouUsThumbnail.png"}
-                              text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}/>
+                              text={"Lernt das Team kennen!"}
+                              url={"/sub/aboutus"}/>
                         <Tile title={"Heinz 2.0"}
                               imgSrc={"/logo.png"}
-                              text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}/>
+                              text={"Wer ist eigentlich Heinz und warum gibt es Heinz 2.0?"}
+                              url={"/sub/heinzzweinull"}/>
                         <Tile title={"Software"}
                               imgSrc={"/vorschaufenster.png"}
-                              text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}/>
+                              text={"Links zur verwendeten Software und Infos dazu"}
+                              url={"/sub/software"}/>
                         <Tile title={"Tutorials"}
                               imgSrc={"/limitationen.png"}
-                              text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}/>
+                              text={"Dein Weg zum ersten Deepfake!"}
+                        url={"/sub/tutorials"}/>
                         <div
                             className={"flex opacity-50 transition duration-400 hover:opacity-100 hover:opacity-100 hover:bg-heinzBlau w-1/2 justify-center pt-4"}>
                             <div className={"flex-column"}>
