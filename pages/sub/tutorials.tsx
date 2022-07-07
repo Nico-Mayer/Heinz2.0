@@ -16,7 +16,7 @@ function tutorials() {
                 >
                     <SubHeader title={'Videoaufnahmen'}/>
                     <img
-                        className={'mt-5 mb-5 pl-40 pr-40'}
+                        className={'p-8'}
                         src={'/videoaufnahmen.png'}
                     />
                     <StyledText

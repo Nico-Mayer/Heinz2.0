@@ -68,10 +68,10 @@ function hienzzweinull() {
             text={
               <p>
                 Prof. Dr. Heinz Brünig ist Professor für Angewandte Informatik,
-                Interaktive Systeme, <br />
+                Interaktive Systeme,
                 Multimedia, Mustererkennung und Bildverarbeitung an der
-                Technischen Hochschule Georg Simon Ohm in Nürnberg. Wir als
-                Studierende in Media Engineering von der Fakultät EFI
+                Technischen Hochschule Georg Simon Ohm in Nürnberg.  <br />
+                Wir als Studierende in Media Engineering von der Fakultät EFI
                 (Elektrotechnik, Feinwerktechnik, Informationstechnik) durften
                 ihn bereits in den Vorlesungen Multimedia und Interaktion
                 erleben. Da Prof. Brünig eine bekannte Person des
@@ -80,7 +80,7 @@ function hienzzweinull() {
               </p>
             }
           />
-          <img className={'mb-8'} src={'/heinzPortrait.jpg'} />
+          <img className={'mb-8 max-h-64'} src={'/Profilbild_Heinz_Bruenig.jpg'} />
         </div>
       </main>
     </div>
