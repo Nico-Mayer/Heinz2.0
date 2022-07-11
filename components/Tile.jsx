@@ -7,7 +7,7 @@ function Tile({ title, text, imgSrc, url }) {
   return (
     <div
       className={
-        'flex h-96 w-1/2 cursor-pointer flex-col items-center pt-4 transition-all duration-500 hover:bg-heinzBlau hover:opacity-100'
+        'flex h-96 w-1/2 cursor-pointer flex-col items-center pt-4 transition-all duration-500 hover:bg-heinzBlau '
       }
       onClick={() => {
         router.push(url)
