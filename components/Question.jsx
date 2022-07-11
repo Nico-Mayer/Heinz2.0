@@ -3,12 +3,12 @@ import StyledText from './StyledText'
 import { motion } from 'framer-motion'
 
 function Question({ text, faq }) {
-  const [showQuestion, setShowQuestion] = useState(false)
+  const [showAnswer, setShowAnswer] = useState(false)
   return (
     <>
       <div
         className="flex cursor-pointer items-center "
-        onClick={() => setShowQuestion(!showQuestion)}
+        onClick={() => setShowAnswer(!showAnswer)}
       >
         <h1 className="mb-0 w-full w-fit border-b-2 border-solid border-heinzBlau text-3xl text-heinzBlau transition duration-300 hover:border-white">
           {faq}
@@ -18,12 +18,12 @@ function Question({ text, faq }) {
           alt="arrow"
           className={
             `ml-8 h-6 transition-all duration-300 ` +
-            (showQuestion ? 'rotate-180' : '')
+            (showAnswer ? 'rotate-180' : '')
           }
         />
       </div>
 
-      {showQuestion ? (
+      {showAnswer ? (
         <motion.div
           initial="hidden"
           animate="visible"
@@ -43,7 +43,7 @@ function Question({ text, faq }) {
             },
           }}
           className={`mt-0s max-w-3xl bg-heinzBlau ${
-            showQuestion ? 'block' : 'hidden'
+            showAnswer ? 'block' : 'hidden'
           }`}
         >
           <StyledText
