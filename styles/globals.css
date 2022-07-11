@@ -15,11 +15,11 @@ p {
   margin: 1.25rem;
 }
 
-.source{
-  color: #CCA472;
+.source {
+  color: #cca472;
 }
 
-.source:hover{
+.source:hover {
   color: white;
 }
 
@@ -34,4 +34,25 @@ p {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2b3539;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
 }
