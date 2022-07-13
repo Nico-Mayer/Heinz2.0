@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import Tile from '../components/Tile'
+import router from "next/router";
 
 const Home: NextPage = () => {
   return (
@@ -74,7 +75,9 @@ const Home: NextPage = () => {
                 'duration-400 flex w-1/2 cursor-pointer justify-center pt-4 opacity-50 transition hover:bg-heinzBlau hover:opacity-100 hover:opacity-100'
               }
             >
-              <div className={'flex-column'}>
+              <div className={'flex-column'} onClick={() => {
+                router.push('/sub/faq')
+              }}>
                 <h1 className={'justify-self-center text-3xl'}>FAQ</h1>
                 <p className={'max-h-96 justify-self-center p-8 text-9xl'}>?</p>
               </div>

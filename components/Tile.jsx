@@ -15,7 +15,7 @@ function Tile({ title, text, imgSrc, url }) {
       onMouseEnter={() => setMouseOver(true)}
       onMouseLeave={() => setMouseOver(false)}
     >
-      <h1 className={'text-3xl'}>{title}</h1>
+      <h1 className={'text-3xl text-white'}>{title}</h1>
       <div className="my-auto">
         {mouseOver ? (
           <p className="mb-10 text-xl">{text}</p>
