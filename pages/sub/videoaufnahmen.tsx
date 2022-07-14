@@ -17,7 +17,7 @@ function videoaufnahmen() {
                 >
                     <img
                         className={'p-8'}
-                        src={'/videoaufnahmen.png'}
+                        src={'/videoaufnahmen2.png'}
                     />
                     <StyledText
                         text={

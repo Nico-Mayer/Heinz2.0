@@ -96,6 +96,7 @@ function deepfakes() {
                             </p>
                         }
                     />
+                    <a id={"deeplearning"}/>
                     <img className={'p-4'} src={'/zwiebel.png'}/>
                     <StyledText
                         text={
@@ -220,7 +221,6 @@ function deepfakes() {
                         }
                     />
                     <img className={'p-4'} src={'/topologie.png'}/>
-                    <SubHeader title={'Mathematik'}/>
                     <SubHeader title={'Einsatz neuronaler Netze bei Deepfakes'}/>
                     <StyledText
                         text={
@@ -265,7 +265,7 @@ function deepfakes() {
                     />
                     <img className={'p-4'} src={'/algorithmus2.png'}/>
                     <StyledText
-                        text={<p>Reales Beispiel (Heinz und Teammitglied Jonas):</p>}
+                        text={<p>Reales Beispiel mit einem wenig trainierten Modell (Heinz und Teammitglied Jonas):</p>}
                     />
                     <img className={'p-4'} src={'/realesBsp.png'}/>
                     <SubHeader title={'Deepfakevarianten'}/>
@@ -279,7 +279,7 @@ function deepfakes() {
                     />
                     <img className={'p-4'} src={'/varianten.png'}/>
                     <SubHeader title={'Technische Limitationen'}/>
-                    <img className={'p-4'} src={'/limitationen.png'}/>
+                    <img className={'p-4'} src={'/limitationen2.png'}/>
                     <SubHeader title={'Quellen'}/>
                     <a className={"source"} id={"linkSrc1"} target="_blank"
                        href={"https://www.politico.eu/article/spa-donald-trump-belgium-paris-climate-agreement-belgian-socialist-party-circulates-deep-fake-trump-video/"}>[1]

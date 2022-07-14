@@ -13,6 +13,7 @@ function googlecolab() {
                         'z-10 flex  flex-1 flex-col items-center  bg-bgMain/40 px-8 py-10 shadow-3xl  backdrop-blur-md'
                     }
                 >
+                    <SubHeader title={"Fazit"}></SubHeader>
                     <StyledText
                         text={
                             <p>
