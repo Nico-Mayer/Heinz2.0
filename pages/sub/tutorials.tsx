@@ -50,7 +50,7 @@ function tutorials() {
                             url={'/sub/deepfacelab'}
                         />
                         <Tile
-                            title={'GoogleColab'}
+                            title={'DeepFaceCoLab'}
                             imgSrc={'/limitationen.png'}
                             text={'GoogleColab als alternative Vorgehensweise, falls man keine GPU hat'}
                             url={'/sub/googlecolab'}

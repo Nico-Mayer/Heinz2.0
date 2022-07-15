@@ -2,6 +2,7 @@ import React from 'react'
 import MainHeader from '../../components/MainHeader'
 import StyledText from '../../components/StyledText'
 import SubHeader from "../../components/SubHeader";
+import router from "next/router";
 
 function deepfacelab() {
     return (
@@ -142,7 +143,9 @@ function deepfacelab() {
                                     sollte unbedingt erweitert werden, zum Beispiel durch das
                                     Sortieren des Facesets und anschließendem Aussortieren von
                                     unbrauchbaren Gesichtern oder durch Verwendung von{' '}
-                                    <span className={'text-heinzBlau'}>Xseg</span>. Zu
+                                    <span className={"text-heinzOrange hover:text-heinzGrau"} onClick={() => {
+                                        router.push("/sub/deepfacelive#xseg")
+                                    }}>XSEG</span>. Zu
                                     unbrauchbaren Gesichtern gehören, laut offiziellem Guide, zu
                                     sehr rotierte, unscharfe, abgeschnittene, durch etwas
                                     halbtransparentes überlagerte und über- oder unterbelichtete

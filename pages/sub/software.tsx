@@ -33,6 +33,7 @@ function software() {
                         linkDescription={<p>Hier ist der Link zum Github-Repository:</p>}
                         link={'https://github.com/iperov/DeepFaceLab'}
                     />
+                    <a id={"colab"}/>
                     <SoftwareArticle
                         title={'Google Colab'}
                         text={

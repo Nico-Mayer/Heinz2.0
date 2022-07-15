@@ -49,6 +49,7 @@ function deepfacelab() {
                         Nachdem das Training beendet ist, kann das Model als DFM model exportiert werden.<br/><br/>
                         Vorteile dieses Workflows, bestehen vor allem in seiner Schlichtheit. Allerdings entsteht nach diesem Trainingszyklus ein Modell, welches über 4.000.000 Iterationen besitzt. Dieses Ziel ist aufgrund von den daraus entstehenden Hardware Voraussetzungen allerdings nicht realistisch. Die Projetktarbeit von Heinz 2.0 wurde mit einer RTX 3080ti und 64GB Ram fertig gestellt. Allerdings war es dabei dem Rechner nicht möglich über eine Iterationszahl von 2.000.000 Iterationen zu gelangen, weshalb der oben beschriebene Workflow abgeändert werden musste.
                     </p>}/>
+                    <a id={"xseg"}/>
                     <SubHeader title={'XSEG'}/>
                     <StyledText text={<p>
                         Bevor das eigentliche Training beginnen kann, ist eine Bearbeitung des Facesets mithilfe des XSeq Tools hilfreich. XSeq erstellt eine automatische Maske und lernt zwischen dem Hintergrund eines Bildes und dem Gesicht einer Person zu unterscheiden. Ein grüner Schatten zeigt dem Nutzer wie gründlich XSeq bereits das Faceset kennt. Es empfehlt sich, das Faceset erst mit einem generischem Druchlauf von der Software zu trainieren und dieses später weiter zu bearbeiten.
