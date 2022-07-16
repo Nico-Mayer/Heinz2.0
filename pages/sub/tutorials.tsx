@@ -16,7 +16,7 @@ function tutorials() {
                         'z-10 flex min-h-screen flex-1 flex-col items-center justify-center bg-bgMain/40 py-10 px-8 shadow-2xl  backdrop-blur-md'
                     }
                 >
-                    <StyledText text={<p>Zunächst einmal braucht man für ein Deepfake geeignetes Videomaterial.Eine Anleitung hierzu findet ihr hier:</p>}/>
+                    <StyledText text={<p>Zunächst einmal braucht man für ein Deepfake geeignetes Videomaterial. Eine Anleitung hierzu findet ihr hier:</p>}/>
                     <div
                         className={
                             'z-10 mt-12 flex h-min flex-wrap justify-center bg-bgMain/40 shadow-3xl backdrop-blur-md '
@@ -38,6 +38,7 @@ function tutorials() {
                     <StyledText text={<p>Wenn man nun das Videomaterial hat, kann man endlich loslegen! Deine zur verfügungstehende Hardware bestimmt, wie du am Besten vorgehen solltest.</p>}/>
                     <SubHeader title={'Welche Hardware steht zur Verfügung?'}/>
                     <img className={'pl-20 pr-20'} src={'/welchestutorial.png'}/>
+                    <SubHeader title={'Software-Tutorials'}/>
                     <div
                         className={
                             'z-10 mt-12 flex h-min flex-wrap justify-center bg-bgMain/40 shadow-3xl backdrop-blur-md '
@@ -51,8 +52,8 @@ function tutorials() {
                         />
                         <Tile
                             title={'DeepFaceCoLab'}
-                            imgSrc={'/limitationen.png'}
-                            text={'GoogleColab als alternative Vorgehensweise, falls man keine GPU hat'}
+                            imgSrc={'/gctut/training.png'}
+                            text={'Google Colab als alternative Vorgehensweise, falls man keine GPU hat'}
                             url={'/sub/googlecolab'}
                         />
                         <Tile

@@ -33,6 +33,17 @@ function software() {
                         linkDescription={<p>Hier ist der Link zum Github-Repository:</p>}
                         link={'https://github.com/iperov/DeepFaceLab'}
                     />
+                    <SoftwareArticle
+                        title={'DeepFaceCoLab'}
+                        text={
+                            <p>
+                                Falls man möchte kann man Deepfakes mit DeepFaceLab auch mit Google Colab erstellen.
+                                Um an das entsprechende Jupyter Notebook zu kommen, einfach dem ersten offiziellen Link folgen.
+                            </p>
+                        }
+                        linkDescription={<p>Hier ist der Link zum Github-Repository:</p>}
+                        link={'https://github.com/chervonij/DFL-Colab'}
+                    />
                     <a id={"colab"}/>
                     <SoftwareArticle
                         title={'Google Colab'}
@@ -93,6 +104,17 @@ function software() {
                             </p>
                         }
                         link={'https://colab.research.google.com/'}
+                    />
+                    <SoftwareArticle
+                        title={'DeepFaceLive'}
+                        text={
+                            <p>
+                                Wer in Echtzeit zu Heinz Brünig werden will oder ein eigenes RTM-Modell (ready to merge) erstellt hat,
+                                braucht nur noch DeepFaceLive!
+                            </p>
+                        }
+                        linkDescription={<p>Hier ist der Link zum Github-Repository:</p>}
+                        link={'https://github.com/iperov/DeepFaceLive'}
                     />
                     <SoftwareArticle
                         title={'Machine Video Editor'}
