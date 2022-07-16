@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           >
             <h1 className="mb-6 text-7xl font-bold">Heinz 2.0</h1>
             <h1 className="ml-64 animate-pulse text-xl font-bold">
-              Coming Soon...
+              Tauche ein in die Welt der Deepfakes!
             </h1>
           </motion.div>
           <div

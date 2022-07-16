@@ -21,17 +21,9 @@ function impressum() {
                 <p className={'text-heinzBlau'}>
                   Angaben gem&auml;&szlig; &sect; 5 TMG
                 </p>
-                <p>
-                  Oliver Hofmann
-                  <br />
-                  &#91;Stra&szlig;e&#93;
-                  <br />
-                  &#91;Postleitzahl&#93; N&uuml;rnberg
-                </p>
-
                 <p className={'text-heinzBlau'}>Kontakt</p>
                 <p>
-                  Telefon: &#91;Telefonnummer&#93;
+                  Oliver Hofmann (Projektleitender Professor)
                   <br />
                   E-Mail: oliver.hofmann@th-nuernberg.de
                 </p>
@@ -40,16 +32,6 @@ function impressum() {
                 <p>
                   Sophie Harms, Selin Schmitt, Tobias Hartmann, Jonas Krug, Nico
                   Mayer
-                </p>
-
-                <p>
-                  Quelle:{' '}
-                  <a
-                    className={'text-heinzOrange'}
-                    href="https://www.e-recht24.de/impressum-generator.html"
-                  >
-                    https://www.e-recht24.de/impressum-generator.html
-                  </a>
                 </p>
               </>
             }

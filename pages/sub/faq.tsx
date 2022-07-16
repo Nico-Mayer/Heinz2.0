@@ -15,13 +15,19 @@ function faq() {
                         'z-10 flex min-h-screen flex-1 flex-col items-center space-y-20 bg-bgMain/40 py-10 px-8 shadow-3xl backdrop-blur-md'
                     }
                 >
+                    <Question text={<p>
+                        Downloade zunächst das RTM-Modell von Heinz 2.0. Dann brauchst du natürlich auch DeepFaceLive. Verschiebe das heruntergeladene Modell in den richtigen Ordner und schon kannst du in DeepFaceLive zu heinz 2.0 werden!
+                        Eine genauere Erklärung findest du im <span className={"text-heinzOrange hover:text-heinzGrau"} onClick={() => {
+                        router.push("/sub/deepfacelive#ordner")
+                    }}>DeepFaceLive-Tutorial</span>.
+                    </p>} faq={"1. Wie werde ich nun Heinz 2.0?"}/>
                     <Question text={<p>Deepfakes sind gefälschte Medieninhalte. Anhand von
                     Medienmaterialien wie Bildern, Videos oder Audioaufnahmen lassen
                     sich gezielt Manipulationen produzieren, die vom einfachen
                     Interessenten Daheim bis hin zum Deepfake Profi erstellbar sind.
                     Die Ergebnisse sind dabei sehr realistisch und die Fälschung mit dem bloßen Augen zum Teil schwer erkennbar. Genauers findest du dazu natürlich unter <span className={"text-heinzOrange hover:text-heinzGrau"} onClick={() => {
                             router.push("/sub/deepfakes")
-                        }}>Deepfakes</span>.</p>} faq={"1. Was sind eigentlich Deepfakes?"}/>
+                        }}>Deepfakes</span>.</p>} faq={"2. Was sind eigentlich Deepfakes?"}/>
                     <Question
                         text={<><p>Um eine ungefähre Einschätzung zu haben, welche Hardwareanforderungen am besten sind
                             hilft dir vielleicht folgendes Video:<br/></p>
@@ -30,13 +36,13 @@ function faq() {
                             </video>
                             <p>Unter Umständen empfiehlt es sich nur GoogleColab oder eine Kombination aus beidem
                                 (lokal+Colab) zu benutzen.</p></>}
-                        faq={"2. Welche Hardware-Voraussetzungen gibt es?"}/>
+                        faq={"3. Welche Hardware-Voraussetzungen gibt es?"}/>
                     <Question
                         text={<p>Deepfakes sind eine neuartige Technologie. Der Begriff Deepfake wurde im Jahr 2017 das erste Mal genannt.</p>}
-                        faq={"3. Wie lange gibt es Deepfakes eigentlich schon?"}/>
+                        faq={"4. Wie lange gibt es Deepfakes eigentlich schon?"}/>
                     <Question
                         text={<p>Die Technologie hinter Deepfakes ist das sogenannte <span className={"text-heinzOrange hover:text-heinzGrau"} onClick={() => {router.push("/sub/deepfakes#deeplearning")}}>Deep Learning</span>. Deep Learning gehört in der Informatik zum Bereich der Künstliche Intelligenz und ist wiederum ein Teilbereich des sogenannten Machine Learnings (dt. Maschinelles Lernen). Ziel des Machine Learnings, sowie des Deep Learnings ist, dass IT-Systeme wie Computer bzw. Maschinen im Allgemeinen genauso fähig sind zu Lernen und zu Denken wie wir Menschen.</p>}
-                        faq={"4. Wie funktionieren Deepfakes?"}/>
+                        faq={"5. Wie funktionieren Deepfakes?"}/>
                     <Question text={<p>
                         Die Nutzung von DeepFaceLab ist kostenlos und einfach über
                         folgenden Link zu erhalten:
@@ -52,14 +58,14 @@ function faq() {
                         <br/>
                         Google Colab ist bis zu einer Trainingszeit von 12 Stunden
                         kostenlos nutzbar.
-                    </p>} faq={"5. Muss ich für DeepFaceLab oder Google Colab bezahlen?"}/>
+                    </p>} faq={"6. Muss ich für DeepFaceLab oder Google Colab bezahlen?"}/>
                     <Question text={<p>
                         Eine Grafikarte auch GPU (Graphics Processing Unit) sind auf bestimte mathematische Verfahren,
                         wie Vektor- und Matrizen-Berechnungen, spezialisierter Prozessor. Solche Rechnungen werden vor
                         allem benötigt, wenn es um Grafik beispielsweis in Spielen geht. <a className={'source'}
                                                                                             id={"srcRef14"}
                                                                                             href={"#linkSrc14"}>[14]</a>
-                    </p>} faq={"6. Was ist eine GPU / Grafikkarte?"}/>
+                    </p>} faq={"7. Was ist eine GPU / Grafikkarte?"}/>
                     <SubHeader title={'Quellen'}/>
                     <a className={"source"} id={"linkSrc14"} target="_blank"
                        href={"https://books.google.de/books?id=6aepodiiEK0C&lpg=PA1&ots=OI0f2kwksV&dq=was%20ist%20eine%20grafikkarte&lr&hl=de&pg=PA7#v=onepage&q&f=false"}>[14]

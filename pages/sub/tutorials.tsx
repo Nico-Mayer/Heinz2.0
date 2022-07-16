@@ -2,7 +2,6 @@ import React from 'react'
 import MainHeader from '../../components/MainHeader'
 import SubHeader from '../../components/SubHeader'
 import StyledText from '../../components/StyledText'
-import {Span} from 'next/dist/trace'
 import Tile from "../../components/Tile";
 import router from "next/router";
 
@@ -51,7 +50,7 @@ function tutorials() {
                             url={'/sub/deepfacelab'}
                         />
                         <Tile
-                            title={'DeepFaceCoLab'}
+                            title={'DFL mit Google Colab'}
                             imgSrc={'/gctut/training.png'}
                             text={'Google Colab als alternative Vorgehensweise, falls man keine GPU hat'}
                             url={'/sub/googlecolab'}
@@ -63,10 +62,6 @@ function tutorials() {
                             url={'/sub/deepfacelive'}
                         />
                     </div>
-                    <SubHeader title={'Quellen'}/>
-                    <a className={"source"} id={"linkSrc13"} target="_blank"
-                       href={"https://mrdeepfakes.com/forums/thread-guide-deepfacelab-2-0-guide"}>[13]
-                        [GUIDE] - DeepFaceLab 2.0 Guide. [Online]. Zugriff am: 20. Februar 2022.</a>
                 </div>
             </main>
         </div>
